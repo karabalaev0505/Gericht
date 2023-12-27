@@ -1,0 +1,53 @@
+
+.header{
+  background: #040404;
+  padding: 32px 0;
+  &-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-menu{
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+  &-login{
+    display: flex;
+    column-gap: 100px;
+    position: relative;
+    &::before{
+      content: '';
+      width: 1px;
+      height: 57px;
+      background: white;
+      position: absolute;
+      left: 60%;
+      top: -30%;
+    }
+  }
+    &-title{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 700;
+      font-size: 44px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    &-item{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+    }
+    &-link, &-book{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: #FFFFFF;
+    }
+  }

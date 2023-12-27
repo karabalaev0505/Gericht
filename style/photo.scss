@@ -1,0 +1,77 @@
+.photo{
+  padding: 110px 0;
+  &-row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+  }
+  &-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-right{
+    display: flex;
+    column-gap: 32px;
+  }
+  &-subtitle{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+    position: relative;
+    &::before{
+      content: '';
+      background: url("../images/customer/vector.png");
+      width: 40px;
+      height: 9px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+    }
+  }
+  &-title{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+    margin: 25px 0;
+  }
+  &-info{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+    margin-bottom: 25px;
+  }
+  &-btn{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #0C0C0C;
+    border: none;
+    border-radius: 3px;
+    transition: 1s;
+    width: 136px;
+    height: 44px;
+    background: #DCCA87;
+    &:hover{
+      cursor: pointer;
+      border-radius: 5px;
+      opacity: 60%;
+      transition: 1s;
+    }
+  }
+}

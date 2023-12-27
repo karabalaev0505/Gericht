@@ -1,0 +1,93 @@
+.believe{
+  padding: 128px 0;
+  &-row{
+    display: flex;
+    column-gap: 96px;
+  }
+  &-left{
+    position: relative;
+    &::before{
+      content: '';
+      width: 435px;
+      height: 435px;
+      background: transparent;
+      border-top: 25px solid #DCCA87;
+      border-right: 25px solid #DCCA87;
+      position: absolute;
+      top: -25px;
+      right: -25px;
+    }
+    &::after{
+      content: '';
+      width: 435px;
+      height: 435px;
+      background: transparent;
+      border-bottom: 25px solid #DCCA87;
+      border-left: 25px solid #DCCA87;
+      position: absolute;
+      bottom: -21px;
+      left: -25px;
+    }
+  }
+  &-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-subtitle{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+  }
+  &-vector{
+    margin: 8px 0;
+  }
+  &-title{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+  }
+  &-info{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+    margin: 64px 0;
+  }
+  &-name{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+  }
+  &-user{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+    margin: 8px 0 64px;
+  }
+  &-autograph{
+    width: 235px;
+    height: 83px;
+  }
+}

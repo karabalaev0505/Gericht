@@ -1,0 +1,26 @@
+.happy{
+  padding: 330px 0;
+  background: url("../images/happy/bg.png") center/cover no-repeat;
+  text-align: center;
+  &-title{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 600;
+    font-size: 128px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+    margin-bottom: 32px;
+  }
+  &-subtitle{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+  }
+}

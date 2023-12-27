@@ -1,0 +1,86 @@
+.food{
+  padding: 93px 0 79px ;
+  background: #040404;
+  position: relative;
+  &::before{
+    content: '';
+    width: 146px;
+    height: 146px;
+    background: url("../images/menu/badge.png");
+    position: absolute;
+    top: 3px;
+    left: 146px;
+  }
+  &-row{
+    display: flex;
+    column-gap: 143px;
+    &-right{
+      position: absolute;
+    }
+    &-img{
+      position: relative;
+      bottom: -138px;
+    }
+    &-left{
+      display: flex;
+      flex-direction: column;
+    }
+    &-subtitle{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 130%;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #FFFFFF;
+      margin: 40px 0 25px;
+      position: relative;
+      &::before{
+        content: '';
+        background: url("../images/gericht/vector.png");
+        width: 40px;
+        height: 9px;
+        position: absolute;
+        top: 40px;
+      }
+    }
+    &-title{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #DCCA87;
+    }
+    &-info{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #AAAAAA;
+      margin: 32px 0;
+    }
+    &-btn{
+      padding: 8px 32px;
+      background: #DCCA87;
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #0C0C0C;
+      border: none;
+      transition: 1s;
+      &:hover{
+        cursor: pointer;
+        opacity: 60%;
+        border-radius: 5px;
+        transition: 1s;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.book{
+  padding: 157px 0 152px;
+  position: relative;
+  &::before{
+    content: url("../images/menu/badge.png");
+    position: absolute;
+    top: -20px;
+    right: 115px;
+  }
+  &-form{
+    padding: 48px 32px;
+    background: #0C0C0C;
+    width: 1364px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &-subtitle{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 130%;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #FFFFFF;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 10px;
+        background: url("../images/gericht/vector.png");
+        top: 40px;
+        left: 35%;
+      }
+    }
+    &-title{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 130%;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #DCCA87;
+      margin: 26px 0 64px;
+    }
+    &-btn{
+      padding: 8px 32px;
+      background: #DCCA87;
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #0C0C0C;
+      transition: 1s;
+      &:hover{
+        cursor: pointer;
+        opacity: 60%;
+        transition: 1s;
+        border-radius: 5px;
+      }
+    }
+    &-row{
+      display: flex;
+      justify-content: center;
+      column-gap: 32px;
+      margin-bottom: 64px;
+    }
+    &-select{
+      width: 412px;
+      padding: 16px;
+      background: transparent;
+      border: 1px solid #F5EFDB;
+      display: flex;
+      justify-content: flex-start;
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #AAAAAA;
+    }
+  }
+}

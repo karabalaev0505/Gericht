@@ -1,0 +1,82 @@
+.our{
+  padding: 128px 0;
+  &-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 111px;
+  }
+  &-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-subtitle{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background: url("../images/gericht/vector.png");
+      width: 40px;
+      height: 10px;
+      top: 35px;
+      left: 0;
+    }
+  }
+  &-title{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+    margin: 25px 0 64px;
+  }
+  &-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 32px;
+  }
+  &-card{
+    width: calc(50% - 16px);
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+    &-img{
+      width: 79px;
+      height: 79px;
+    }
+    &-info{
+      width: 190px;
+    }
+    &-title{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 130%;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #DCCA87;
+      margin-bottom: 8px;
+    }
+    &-subtitle{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #AAAAAA;
+    }
+  }
+}

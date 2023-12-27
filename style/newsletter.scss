@@ -1,0 +1,92 @@
+.newsletter{
+  padding: 113px 0 144px;
+  &-form{
+    padding: 64px 252px;
+    width: 1300px;
+    background: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &-subtitle{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 130%;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #FFFFFF;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 10px;
+        background: url("../images/gericht/vector.png");
+        top: 40px;
+        left: 30px;
+      }
+    }
+    &-title{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #DCCA87;
+      margin: 25px 0;
+    }
+    &-info{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      margin-bottom: 64px;
+    }
+    &-email{
+      width: 635px;
+      border: 1px solid #F5EFDB;
+      padding: 16px 18px;
+      background: transparent;
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #AAAAAA;
+    }
+    &-btn{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #0C0C0C;
+      background: #DCCA87;
+      padding: 8px 32px;
+      border: none;
+      transition: 1s;
+      width: 129px;
+      height: 44px;
+      &:hover{
+        cursor: pointer;
+        opacity: 60%;
+        border-radius: 5px;
+        transition: 1s;
+      }
+    }
+    &-row{
+      display: flex;
+      align-items: center;
+      column-gap: 32px;
+    }
+  }
+}

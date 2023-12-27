@@ -1,0 +1,41 @@
+.poison{
+  padding: 201px 0 152px;
+  text-align: center;
+  &-row{
+    display: flex;
+    column-gap: 34px;
+    &-row-card{
+      //width: calc(33.33333% - 34px);
+    }
+  }
+  &-subtitle{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    position: relative;
+    &::before{
+      content: '';
+      background: url("../images/customer/vector.png");
+      width: 40px;
+      height: 9px;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &-title{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #DCCA87;
+    margin: 25px 0 64px;
+  }
+}

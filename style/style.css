@@ -1,0 +1,1717 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600;700&family=Open+Sans:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+body {
+  background: #040404;
+}
+
+.header {
+  background: #040404;
+  padding: 32px 0;
+}
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+.header-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+  position: relative;
+}
+.header-login::before {
+  content: "";
+  width: 1px;
+  height: 57px;
+  background: white;
+  position: absolute;
+  left: 60%;
+  top: -30%;
+}
+.header-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.header-item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+.header-link, .header-book {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.gericht {
+  padding: 95px 0 147px;
+}
+.gericht-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 180px;
+     -moz-column-gap: 180px;
+          column-gap: 180px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gericht-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+  position: relative;
+  margin-bottom: 8px;
+}
+.gericht-vector {
+  margin: 8px 0;
+}
+.gericht-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #DCCA87;
+}
+.gericht-info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin: 32px 0;
+}
+.gericht-btn {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0B08;
+  padding: 8px 32px;
+  background: #DCCA87;
+  border: 1px solid #DCCA87;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.gericht-btn:hover {
+  cursor: pointer;
+}
+.gericht-img {
+  position: relative;
+}
+.gericht-img::before {
+  content: "";
+  width: 435px;
+  height: 435px;
+  background: transparent;
+  border-top: 25px solid #DCCA87;
+  border-right: 25px solid #DCCA87;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+.gericht-img::after {
+  content: "";
+  width: 435px;
+  height: 435px;
+  background: transparent;
+  border-bottom: 25px solid #DCCA87;
+  border-left: 25px solid #DCCA87;
+  position: absolute;
+  bottom: -25px;
+  left: -25px;
+}
+
+.history {
+  padding: 267px 0;
+  background: #0C0C0C;
+}
+.history-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 254px;
+     -moz-column-gap: 254px;
+          column-gap: 254px;
+}
+.history-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+.history-left::before {
+  content: url("../images/history/knife.png");
+  position: absolute;
+  top: -73%;
+  right: -30%;
+  z-index: 2;
+}
+.history-left::after {
+  content: url("../images/history/g.png");
+  position: absolute;
+  top: -25%;
+  right: -60.4%;
+  z-index: 1;
+}
+.history-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+.history-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  text-align: right;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  z-index: 2;
+}
+.history-vector {
+  margin: 8px 0 32px;
+  z-index: 2;
+}
+.history-info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin-bottom: 32px;
+  width: 523px;
+  height: 84px;
+  z-index: 2;
+}
+.history-info2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: left;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin-bottom: 32px;
+  width: 523px;
+  height: 84px;
+  z-index: 2;
+}
+.history-btn {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0C0C;
+  padding: 8px 32px;
+  background: #DCCA87;
+  border: 1px solid #DCCA87;
+  z-index: 2;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.history-btn:hover {
+  cursor: pointer;
+  opacity: 65%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 5%;
+}
+
+.menu {
+  padding: 293px 0 262px;
+  background: url("../images/menu/menu.png") center/cover no-repeat;
+}
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 64px;
+  position: relative;
+  width: 450px;
+}
+.menu-list::before {
+  content: url("../images/menu/badge.png");
+  position: absolute;
+  top: -70%;
+}
+.menu-item {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+}
+.menu-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.believe {
+  padding: 128px 0;
+}
+.believe-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 96px;
+     -moz-column-gap: 96px;
+          column-gap: 96px;
+}
+.believe-left {
+  position: relative;
+}
+.believe-left::before {
+  content: "";
+  width: 435px;
+  height: 435px;
+  background: transparent;
+  border-top: 25px solid #DCCA87;
+  border-right: 25px solid #DCCA87;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+.believe-left::after {
+  content: "";
+  width: 435px;
+  height: 435px;
+  background: transparent;
+  border-bottom: 25px solid #DCCA87;
+  border-left: 25px solid #DCCA87;
+  position: absolute;
+  bottom: -21px;
+  left: -25px;
+}
+.believe-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.believe-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+}
+.believe-vector {
+  margin: 8px 0;
+}
+.believe-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+}
+.believe-info {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin: 64px 0;
+}
+.believe-name {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+}
+.believe-user {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin: 8px 0 64px;
+}
+.believe-autograph {
+  width: 235px;
+  height: 83px;
+}
+
+.customer {
+  padding: 152px 0;
+}
+.customer-text {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+.customer-text::before {
+  content: url("../images/customer/vector.png");
+  position: absolute;
+  top: 25px;
+  left: 48.5%;
+}
+.customer-text::after {
+  content: url("../images/menu/badge.png");
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
+.customer-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.customer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 64px 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.customer-card {
+  width: calc(50% - 16px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.customer-card-info {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+}
+.customer-card-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin: 16px 0 4px;
+}
+.customer-card-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #F5EFDB;
+}
+
+.video {
+  width: 100%;
+  height: 763px;
+  position: relative;
+}
+.video::before {
+  content: url("../images/menu/badge.png");
+  position: absolute;
+  top: 150px;
+  left: 200px;
+}
+.video-img {
+  width: 100%;
+}
+
+.blog {
+  padding: 150px 0;
+  position: relative;
+}
+.blog::before {
+  content: url("../images/menu/badge.png");
+  position: absolute;
+  right: 100px;
+  bottom: 120px;
+}
+.blog-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+}
+.blog-subtitle::before {
+  content: "";
+  position: absolute;
+  background: url("../images/gericht/vector.png");
+  width: 40px;
+  height: 10px;
+  top: 35px;
+  left: 630px;
+}
+.blog-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  text-align: center;
+  margin: 25px 0 64px;
+}
+.blog-btn {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0C0C;
+  padding: 8px 32px;
+  background: #DCCA87;
+  border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+.blog-btn:hover {
+  opacity: 60%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+.blog-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+.blog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog-card-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 24px;
+}
+.blog-card-date, .blog-card-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #FAFAFA;
+}
+.blog-card-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin-top: 32px;
+}
+.blog-card-title:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.blog-card-info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin: 32px 0;
+}
+.blog-card-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #DCCA87;
+}
+
+.today {
+  padding: 152px 0;
+}
+.today-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.today-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #DCCA87;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.today-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  margin-bottom: 65px;
+}
+.today-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.today-menu-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+.today-menu-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+  margin-bottom: 62px;
+}
+.today-menu-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  width: 192px;
+}
+.today-menu-line {
+  width: 119px;
+  height: 1px;
+  background: #FAFAFA;
+}
+.today-menu-price {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+}
+.today-menu-info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin: 8px 0 40px;
+}
+.today-btn {
+  padding: 8px 32px;
+  background: #DCCA87;
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0C0C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.today-btn:hover {
+  cursor: pointer;
+  opacity: 60%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.our {
+  padding: 128px 0;
+}
+.our-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 111px;
+     -moz-column-gap: 111px;
+          column-gap: 111px;
+}
+.our-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.our-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+  position: relative;
+}
+.our-subtitle::before {
+  content: "";
+  position: absolute;
+  background: url("../images/gericht/vector.png");
+  width: 40px;
+  height: 10px;
+  top: 35px;
+  left: 0;
+}
+.our-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin: 25px 0 64px;
+}
+.our-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 64px 32px;
+}
+.our-card {
+  width: calc(50% - 16px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-card-img {
+  width: 79px;
+  height: 79px;
+}
+.our-card-info {
+  width: 190px;
+}
+.our-card-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin-bottom: 8px;
+}
+.our-card-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+}
+
+.book {
+  padding: 157px 0 152px;
+  position: relative;
+}
+.book::before {
+  content: url("../images/menu/badge.png");
+  position: absolute;
+  top: -20px;
+  right: 115px;
+}
+.book-form {
+  padding: 48px 32px;
+  background: #0C0C0C;
+  width: 1364px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.book-form-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+  position: relative;
+}
+.book-form-subtitle::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  background: url("../images/gericht/vector.png");
+  top: 40px;
+  left: 35%;
+}
+.book-form-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin: 26px 0 64px;
+}
+.book-form-btn {
+  padding: 8px 32px;
+  background: #DCCA87;
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0C0C;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.book-form-btn:hover {
+  cursor: pointer;
+  opacity: 60%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 5px;
+}
+.book-form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  margin-bottom: 64px;
+}
+.book-form-select {
+  width: 412px;
+  padding: 16px;
+  background: transparent;
+  border: 1px solid #F5EFDB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #AAAAAA;
+}
+
+.newsletter {
+  padding: 113px 0 144px;
+}
+.newsletter-form {
+  padding: 64px 252px;
+  width: 1300px;
+  background: #0C0C0C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.newsletter-form-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+  position: relative;
+}
+.newsletter-form-subtitle::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  background: url("../images/gericht/vector.png");
+  top: 40px;
+  left: 30px;
+}
+.newsletter-form-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin: 25px 0;
+}
+.newsletter-form-info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 64px;
+}
+.newsletter-form-email {
+  width: 635px;
+  border: 1px solid #F5EFDB;
+  padding: 16px 18px;
+  background: transparent;
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #AAAAAA;
+}
+.newsletter-form-btn {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0C0C;
+  background: #DCCA87;
+  padding: 8px 32px;
+  border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 129px;
+  height: 44px;
+}
+.newsletter-form-btn:hover {
+  cursor: pointer;
+  opacity: 60%;
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.newsletter-form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.footer {
+  padding: 128px 0 200px;
+}
+.footer-date {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  position: absolute;
+  top: 300px;
+  left: 570px;
+}
+.footer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.footer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.footer-card-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #F5EFDB;
+  margin-bottom: 24px;
+}
+.footer-card-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  position: relative;
+  margin: 32px 0 40px;
+}
+.footer-card-subtitle::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 9px;
+  background: url("../images/gericht/vector.png");
+  top: 70px;
+  left: 200px;
+}
+.footer-card-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin-bottom: 8px;
+}
+.footer-card-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  color: #FFFFFF;
+}
+.footer-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #DCCA87;
+}
+
+.barHome {
+  padding-bottom: 85px;
+  height: calc(100vh - 117.23px);
+  position: relative;
+  text-align: center;
+  background: #040404;
+}
+.barHome-img {
+  height: calc(100vh - 259px);
+  margin-bottom: 32px;
+}
+.barHome-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  position: absolute;
+  top: 263px;
+  left: 538px;
+}
+.barHome-scroll {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #DCCA87;
+  position: relative;
+}
+.barHome-scroll::before {
+  content: "";
+  width: 1px;
+  height: 61px;
+  background: #FFFFFF;
+  position: absolute;
+  top: -85px;
+  left: 50%;
+}
+
+.food {
+  padding: 93px 0 79px;
+  background: #040404;
+  position: relative;
+}
+.food::before {
+  content: "";
+  width: 146px;
+  height: 146px;
+  background: url("../images/menu/badge.png");
+  position: absolute;
+  top: 3px;
+  left: 146px;
+}
+.food-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 143px;
+     -moz-column-gap: 143px;
+          column-gap: 143px;
+}
+.food-row-right {
+  position: absolute;
+}
+.food-row-img {
+  position: relative;
+  bottom: -138px;
+}
+.food-row-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.food-row-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+  margin: 40px 0 25px;
+  position: relative;
+}
+.food-row-subtitle::before {
+  content: "";
+  background: url("../images/gericht/vector.png");
+  width: 40px;
+  height: 9px;
+  position: absolute;
+  top: 40px;
+}
+.food-row-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+}
+.food-row-info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin: 32px 0;
+}
+.food-row-btn {
+  padding: 8px 32px;
+  background: #DCCA87;
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0C0C;
+  border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.food-row-btn:hover {
+  cursor: pointer;
+  opacity: 60%;
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.poison {
+  padding: 201px 0 152px;
+  text-align: center;
+}
+.poison-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 34px;
+     -moz-column-gap: 34px;
+          column-gap: 34px;
+}
+.poison-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  position: relative;
+}
+.poison-subtitle::before {
+  content: "";
+  background: url("../images/customer/vector.png");
+  width: 40px;
+  height: 9px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.poison-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #DCCA87;
+  margin: 25px 0 64px;
+}
+
+.find {
+  padding: 128px 0 181px;
+}
+.find-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 165px;
+     -moz-column-gap: 165px;
+          column-gap: 165px;
+}
+.find-row-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.find-row-right {
+  position: relative;
+}
+.find-row-right::before {
+  content: "";
+  width: 435px;
+  height: 435px;
+  background: transparent;
+  border-top: 20px solid #DCCA87;
+  border-right: 20px solid #DCCA87;
+  top: -20px;
+  right: -20px;
+  position: absolute;
+}
+.find-row-right::after {
+  content: "";
+  width: 435px;
+  height: 435px;
+  background: transparent;
+  border-bottom: 20px solid #DCCA87;
+  border-left: 20px solid #DCCA87;
+  bottom: -20px;
+  left: -20px;
+  position: absolute;
+}
+.find-row-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  position: relative;
+}
+.find-row-subtitle::before {
+  content: "";
+  background: url("../images/customer/vector.png");
+  width: 40px;
+  height: 9px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
+.find-row-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #DCCA87;
+  margin: 25px 0 64px;
+}
+.find-row-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+}
+.find-row-hours {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin: 32px 0 16px;
+}
+.find-row-date {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+.find-row-btn {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0C0C;
+  padding: 8px 32px;
+  background: #DCCA87;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: none;
+  margin-top: 64px;
+  width: 119px;
+  height: 44px;
+}
+.find-row-btn:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 60%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.happy {
+  padding: 330px 0;
+  background: url("../images/happy/bg.png") center/cover no-repeat;
+  text-align: center;
+}
+.happy-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin-bottom: 32px;
+}
+.happy-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+}
+
+.photo {
+  padding: 110px 0;
+}
+.photo-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+}
+.photo-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.photo-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+.photo-subtitle {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #FFFFFF;
+  position: relative;
+}
+.photo-subtitle::before {
+  content: "";
+  background: url("../images/customer/vector.png");
+  width: 40px;
+  height: 9px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.photo-title {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin: 25px 0;
+}
+.photo-info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin-bottom: 25px;
+}
+.photo-btn {
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0C0C;
+  border: none;
+  border-radius: 3px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 136px;
+  height: 44px;
+  background: #DCCA87;
+}
+.photo-btn:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 60%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-style: normal;
+}
+
+.container{
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.container-small{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+body{
+  background: #040404;
+}
+
+@import "header";
+@import "gericht";
+@import "history";
+@import "menu";
+@import "believe";
+@import "customer";
+@import "video";
+@import "blog";
+@import "today";
+@import "our";
+@import "book";
+@import "newsletter";
+@import "footer";
+@import "barHome";
+@import "food";
+@import "poison";
+@import "find";
+@import "happy";
+@import "photo";
+
+

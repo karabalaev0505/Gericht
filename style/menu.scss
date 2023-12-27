@@ -1,0 +1,30 @@
+.menu{
+  padding: 293px 0 262px;
+  background: url("../images/menu/menu.png") center/cover no-repeat;
+  &-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    position: relative;
+    width: 450px;
+    &::before{
+      content: url("../images/menu/badge.png");
+      position: absolute;
+      top: -70%;
+    }
+  }
+  &-item{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+    &:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.blog{
+  padding: 150px 0;
+  position: relative;
+  &::before{
+    content: url("../images/menu/badge.png");
+    position: absolute;
+    right: 100px;
+    bottom: 120px;
+  }
+  &-subtitle{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background: url("../images/gericht/vector.png");
+      width: 40px;
+      height: 10px;
+      top: 35px;
+      left: 630px;
+    }
+  }
+  &-title{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+    text-align: center;
+    margin: 25px 0 64px;
+  }
+  &-btn{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #0C0C0C;
+    padding: 8px 32px;
+    background: #DCCA87;
+    border: none;
+    transition: 1s;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 64px;
+    &:hover{
+      opacity: 60%;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+  &-row{
+    display: flex;
+    column-gap: 32px;
+  }
+  &-card{
+    display: flex;
+    flex-direction: column;
+
+    &-user{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+    }
+    &-date, &-name{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #FAFAFA;
+    }
+    &-title{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 130%;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #DCCA87;
+      margin-top: 32px;
+      &:hover{
+        text-decoration-line: underline;
+        cursor: pointer;
+      }
+    }
+    &-info{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #AAAAAA;
+      margin: 32px 0;
+    }
+    &-subtitle{
+      font-family: 'Cormorant Upright', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #DCCA87;
+    }
+  }
+}
